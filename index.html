@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumar Shubham - Software Engineer</title>
+
+    <!-- AOS Library for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
+            color: #fff;
+            text-align: center;
+            padding: 2.5em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+        section {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-bottom: 2em;
+            border-radius: 10px;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+        }
+        .about img {
+            border-radius: 50%;
+            width: 180px;
+            margin-right: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .projects, .experience, .skills, .contact {
+            margin-top: 2em;
+        }
+        .project, .experience-item {
+            border: 1px solid #ddd;
+            padding: 1em;
+            background-color: #fff;
+            margin-bottom: 1em;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project:hover, .experience-item:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background-color: #6e45e2;
+            color: #fff;
+        }
+        .progress {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #6e45e2;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            width: 0;
+            animation: loadBar 2s ease-out forwards;
+        }
+        @keyframes loadBar {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<header data-aos="fade-down">
+    <h1>Kumar Shubham</h1>
+    <p>Software Engineer | Blockchain Enthusiast</p>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="about" data-aos="fade-up">
+    <img src="profile.jpg" alt="Kumar Shubham Profile Picture">
+    <div>
+        <h2>About Me</h2>
+        <p>I'm Kumar Shubham, a passionate software engineer with hands-on experience in blockchain, open-source projects, and developer tools. I aim to contribute to impactful projects that leverage my skills in web development, automation, and blockchain technologies.</p>
+    </div>
+</section>
+
+<section id="projects" class="projects" data-aos="fade-up">
+    <h2>Key Projects</h2>
+    <div class="project" data-aos="fade-right">
+        <h3>MedLink</h3>
+        <p>A decentralized medical record system using IPFS for secure data storage. <a href="https://github.com/Kshubhamm/MedLink">GitHub Repo</a></p>
+    </div>
+    <div class="project" data-aos="fade-left">
+        <h3>NearCab</h3>
+        <p>A full-stack cab booking app with authentication and admin features. <a href="https://github.com/Kshubhamm/NearCab">GitHub Repo</a></p>
+    </div>
+    <div class="project" data-aos="fade-right">
+        <h3>E-Commerce Platform</h3>
+        <p>A MERN stack e-commerce platform with payment integration. <a href="https://github.com/Kshubhamm/E-Commerce">GitHub Repo</a></p>
+    </div>
+</section>
+
+<section id="experience" class="experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <table>
+        <tr>
+            <th>Position</th>
+            <th>Company</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>Associate Software Engineer</td>
+            <td>Shell</td>
+            <td>Aug 2023 - Present</td>
+        </tr>
+        <tr>
+            <td>Software Engineer Intern</td>
+            <td>Timely AI</td>
+            <td>Dec 2022 - Aug 2023</td>
+        </tr>
+        <tr>
+            <td>SDE Intern</td>
+            <td>GoComet India Pvt. Ltd.</td>
+            <td>May 2021 - Oct 2021</td>
+        </tr>
+        <tr>
+            <td>Research Intern</td>
+            <td>Samsung R&D Institute</td>
+            <td>Nov 2021 - May 2022</td>
+        </tr>
+    </table>
+</section>
+
+<section id="skills" class="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Proficiency</th>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>React.js</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Blockchain (Solidity)</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;">70%</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kshubham0411@gmail.com">kshubham0411@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Kshubhamm">Kumar Shubham</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/kumar-shubham-b961b5190/">Kumar Shubham</a></p>
+</section>
+
+<footer data-aos="fade-up">
+    <p>© 2024 Kumar Shubham</p>
+</footer>
+
+<!-- AOS Library Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
