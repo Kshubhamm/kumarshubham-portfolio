@@ -116,6 +116,18 @@
             padding: 1em 0;
             margin-top: 2em;
         }
+        html {
+            scroll-behavior: smooth;
+        }
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about img {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -166,22 +178,30 @@
         </tr>
         <tr>
             <td>Associate Software Engineer</td>
-            <td>Shell</td>
+            <td>
+                <img src="shell-logo.png" alt="Shell Logo" style="height: 30px; vertical-align: middle;"> Shell
+            </td>
             <td>Aug 2023 - Present</td>
         </tr>
         <tr>
             <td>Software Engineer Intern</td>
-            <td>Timely AI</td>
+            <td>
+                <img src="timely-ai-logo.png" alt="Timely AI Logo" style="height: 30px; vertical-align: middle;"> Timely AI
+            </td>
             <td>Dec 2022 - Aug 2023</td>
         </tr>
         <tr>
             <td>SDE Intern</td>
-            <td>GoComet India Pvt. Ltd.</td>
+            <td>
+                <img src="gocomet-logo.png" alt="GoComet Logo" style="height: 30px; vertical-align: middle;"> GoComet India Pvt. Ltd.
+            </td>
             <td>May 2021 - Oct 2021</td>
         </tr>
         <tr>
             <td>Research Intern</td>
-            <td>Samsung R&D Institute</td>
+            <td>
+                <img src="samsung-logo.png" alt="Samsung Logo" style="height: 30px; vertical-align: middle;"> Samsung R&D Institute
+            </td>
             <td>Nov 2021 - May 2022</td>
         </tr>
     </table>
@@ -194,53 +214,44 @@
             <th>Skill</th>
             <th>Proficiency</th>
         </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%;">90%</div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 85%;">85%</div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>React.js</td>
-            <td>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Blockchain (Solidity)</td>
-            <td>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 70%;">70%</div>
-                </div>
-            </td>
-        </tr>
     </table>
 </section>
+
+<script>
+    const skills = [
+        { name: "JavaScript", proficiency: 90 },
+        { name: "Python", proficiency: 85 },
+        { name: "React.js", proficiency: 80 },
+        { name: "Blockchain (Solidity)", proficiency: 70 }
+    ];
+
+    const skillsTable = document.querySelector('.skills table');
+
+    skills.forEach(skill => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${skill.name}</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar" style="width: ${skill.proficiency}%;">${skill.proficiency}%</div>
+                </div>
+            </td>
+        `;
+        skillsTable.appendChild(row);
+    });
+</script>
 
 <section id="contact" class="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:kshubham0411@gmail.com">kshubham0411@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Kshubhamm">Kumar Shubham</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kumar-shubham-b961b5190/">Kumar Shubham</a></p>
+    <p>Phone: <a href="tel:+919751964416">+91-9751964416</a></p>
 </section>
 
-<footer data-aos="fade-up">
-    <p>© 2024 Kumar Shubham</p>
+<footer>
+    <p>&copy; 2024 Kumar Shubham. All Rights Reserved.</p>
 </footer>
 
-<!-- AOS Library Script -->
+<!-- AOS Library for Animations -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     AOS.init();
